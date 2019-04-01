@@ -1,0 +1,511 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+  .page-content
+    .container
+      padding: 68px 50px 28px
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 1050px)
+  .slide-panel
+    display: none
+
+  .our-solutions, .news, .popular-question
+    h2
+      &:before, &:after
+        display: none
+    .section-content
+      max-width: none
+      margin: 80px 0 0 0
+      justify-content: flex-start
+    .container
+      padding: 64px 24px
+
+  .popular-question
+    .container
+      &:before
+        width: 300px
+        height: 200px
+        top: 20px
+      h2
+        margin: 0 0 50px
+
+  .popular-question__wrapper:before
+    font-size: 200px
+    line-height: 150px
+
+  .news
+    .container
+      flex-direction: column
+      align-items: flex-start
+      padding: 95px 24px 26px
+      .news-content
+        margin: 78px 0 0 0
+        width: 100%
+        .news-box
+          display: none
+          &:first-child
+            display: block
+            width: 100%
+
+  .news-box__content
+    padding: 38px 24px 49px
+    p
+      font-size: 12px
+      line-height: 21px
+
+
+  .box-solutions
+    margin: 0 30px 70px 0
+    width: 28%
+    &:nth-child(2), &:nth-child(4)
+      width: 28%
+
+  .services-wrapper
+    .container
+      padding: 81px 24px 45px
+      .tabs
+        max-width: none
+        margin: 0 0 80px 0
+      .tabs-wrap
+        margin: 54px 0 0 0
+      .services-box
+        margin: 0 0 34px
+
+  .contacts
+    .container
+      padding: 87px 24px 53px
+      .contacts-text
+        max-width: none
+        font-size: 12px
+        line-height: 21px
+      .title
+        width: 100%
+        max-width: none
+        margin: 0 0 26px 0
+        p
+          font-weight: 600
+          margin: 70px 0 0 0
+          font-size: 12px
+          line-height: 21px
+
+  footer
+    .container
+      padding: 46px 24px
+      .footer-box
+        padding: 0
+        a, span, p
+          font-size: 11px
+
+  .page-content
+    .container
+      padding: 60px 29px 80px
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+  .category-wrapper .container
+    padding: 0
+
+  .category-menu
+    li
+      height: 127px
+      a
+        font-size: 9px
+        padding: 19px 10px
+        .icon
+          height: 48px
+      .btn-mobile
+        display: flex
+        padding: 0
+        height: auto
+        width: 100%
+        text-align: center
+        justify-content: center
+        align-items: center
+        font-weight: 300
+        margin: auto 0 0 0
+
+  .sidebar
+    display: none
+
+  .page-content__wrapper
+    width: 100%
+
+  .solution-box
+    width: 100%
+
+  .services-box-wrapper
+    img
+      width: 100%
+
+
+@media only screen and (max-width : 800px)
+  .project-photo-slider
+    width: 470px
+    .image
+      width: 470px
+
+  header
+    .container
+      padding: 5px 20px
+      position: relative
+    .mail, .phone
+      display: none
+    .btn-mobile
+      display: flex
+      cursor: pointer
+    .phone
+      position: absolute
+      right: 0
+      top: 70px
+      z-index: 2
+      background: #FFFFFF
+      padding: 10px
+      font-size: 20px
+      transition: none
+
+
+  .btn-phone
+    width: 25px
+    height: 25px
+    svg
+      display: inline-block
+      width: 100%
+      height: 100%
+      fill: #ff5e11
+      path
+        fill: #ff5e11
+
+  .navigation-menu
+    display: none
+
+
+  .solution-box
+    min-height: 224px
+
+  .solution-box.bg-accent
+    min-height: 420px
+
+
+  .menu
+    flex-direction: column
+    flex-wrap: nowrap
+    align-items: flex-start
+    justify-content: flex-start
+    margin: 30px 0 0 0
+    li
+      width: 100%
+      a
+        font-size: 14px
+        padding: 20px 0
+        width: 100%
+        text-align: left
+        justify-content: flex-start
+        .icon
+          display: none
+      .dropdown-menu
+        li
+          a
+            color: #481700
+            font-size: 14px
+            text-transform: none
+            padding: 15px 0 15px 24px
+            opacity: 0.65
+            letter-spacing: 0.8px
+
+
+  .dropdown-menu
+    opacity: 1
+    visibility: visible
+    position: relative
+    top: 0
+    li
+      a
+        color: #481700
+        font-size: 14px
+        text-transform: none
+
+  .popular-question
+    display: none
+
+  .services-wrapper
+    .container
+      .services-box
+        width: 48%
+        display: flex
+        flex-direction: row
+        align-items: center
+        max-width: none
+        .icon
+          margin: 0 20px 0 0
+          width: 43px
+          height: auto
+          min-width: 43px
+          svg
+            height: auto
+            width: 100%
+        p
+          font-size: 12px
+          line-height: 17.57px
+
+  .box-solutions
+    font-size: 12px
+
+  h2, .sub-page-wrapper h2
+    font-size: 24px
+
+  .sub-page-wrapper h3
+    font-size: 16px
+    line-height: 24px
+
+
+  h1
+    font-size: 24px
+    z-index: 2
+    max-width: 400px
+    margin: 0 auto
+
+  .main
+    .container
+      padding: 126px 0 90px
+    p
+      font-size: 12px
+      margin: 64px 0 0 0
+
+  .modern-advantages
+    padding: 30px 20px
+    h4, ul
+      max-width: none
+      font-size: 12px
+      line-height: 22px
+    ul
+      margin: 30px 0 0 0
+      li
+        margin: 0 0 30px 0
+
+  .modern-box
+    flex-direction: column
+    align-items: center
+    margin: 0 0 40px
+    .icon
+      margin: 0 0 30px
+    .text
+      max-width: none
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 795px)
+  .project-photo-slider
+    width: 100%
+    .image
+      width: 100%
+      height: auto
+
+  .description-project-slider
+    width: 100%
+    .text
+      width: 100%
+      height: auto
+      min-height: auto
+
+@media only screen and (max-width : 768px)
+  .smart-city
+    .list-icon
+      max-width: none
+      padding: 0
+      li
+        margin: 0 0 30px
+
+  .project-photo-slider .image .text
+    font-size: 18px
+    line-height: normal
+    padding: 0 20px
+
+  .project-wrapper
+    margin: 0
+
+  .list-support > li .tabs-wrap .tabs
+    justify-content: flex-start
+    li
+      margin: 0 10px 9px
+
+@media only screen and (max-width : 690px)
+  .box-solutions, .box-solutions:nth-child(2), .box-solutions:nth-child(4)
+    width: 50%
+    margin: 0 0 50px
+    padding: 0 20px
+
+  .our-solutions .section-content
+    margin: 40px 0 0 0
+
+  .intelligent-power-supply
+    padding: 30px 20px
+    .power-supply-box
+      margin: 30px 0
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 600px)
+  .solution-wrapper
+    column-count: 1
+    display: flex
+    flex-direction: column
+    align-items: center
+
+  .solution-box.bg-accent, .solution-box
+    height: 300px
+    min-height: auto
+    padding: 36px 20px 45px
+    margin: 0 0 20px
+    &:before, &:after
+      width: calc(100% - 40px)
+    .solution-box__list
+      display: none
+    a.btn-mobile
+      display: block
+      margin: auto
+
+  .solution-box
+    &:nth-child(2)
+      order: 2
+
+  .list-support > li.active
+    padding: 29px 20px 20px 30px
+
+  .list-support > li .name-support
+    font-size: 20px
+    margin: 0 0 15px
+    line-height: normal
+
+  .list-support > li .tabs-wrap .tabs li
+    width: 100%
+    a
+      font-size: 12px
+
+  .intelligent-power-supply .power-supply-box
+    width: 100%
+    max-width: none
+    margin: 20px 0
+
+@media only screen and (max-width : 580px)
+  .services-wrapper .container .services-box
+    width: 100%
+
+  .news
+    .container
+      padding: 76px 0 0
+      h2
+        padding: 0 24px
+      .news-content
+        margin: 124px 0 0 0
+
+  .contacts
+    .container
+      padding: 50px 24px
+      .title
+        p
+          margin: 47px 0 0 0
+
+  footer
+    .container
+      padding: 49px 24px 0
+      .footer-box
+        width: 100%
+        flex-direction: row
+        align-items: center
+        flex: auto
+        margin: 0 0 58px
+        .icon
+          margin: 0 26px 0 0
+          width: 30px
+          height: auto
+          display: flex
+          align-items: center
+          justify-content: center
+
+  .smart-city
+    .smart-city-box
+      padding: 30px
+      margin: 0 0 30px
+      h4
+        width: 100%
+        margin: 0 0 20px
+
+  .box-attention
+    flex-direction: column
+    align-items: center
+    padding: 20px
+    .text
+      width: 100%
+      padding: 20px 0 0 0
+
+  .box-location
+    display: flex
+
+  .maps
+    height: 488px
+    margin-bottom: 0
+    svg #loc-city
+      fill: #fff
+
+  .contacts-page
+    .container
+      padding: 32px 0 0
+      h2, h3
+        padding: 0 24px
+      h3
+        font-size: 14px
+        font-weight: 600
+        line-height: 18px
+
+  .services-description
+    width: 100%
+    position: relative
+    left: 0
+    top: 0
+    transform: translate(0,0)
+    padding: 20px 20px 61px 20px
+
+  .services-box-wrapper
+    flex-direction: column
+    align-items: center
+    max-width: none
+    height: auto
+    width: 100%
+
+@media only screen and (max-width : 460px)
+  .box-solutions, .box-solutions:nth-child(2), .box-solutions:nth-child(4)
+    width: 100%
+    padding: 0
+
+
+  h1
+    max-width: none
+    font-size: 18px
+
+  .list-icon
+    li
+      flex-direction: column
+      align-items: center
+      text-align: center
+      .icon
+        margin: 0 0 20px
+
+  .list-support > li .select-model select
+    width: 200px
+
+  .list-characteristics li
+    font-size: 10px
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    &:before
+      display: none
+
+
+
+  .list-support > li
+    padding: 0 30px
